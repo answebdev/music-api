@@ -1,0 +1,82 @@
+{
+    "albums": [
+        {
+            "id": 0,
+            "artist": "Swans",
+            "album": "White Light From The Mouth Of Infinity",
+            "year": "1991",
+            "tracks": [
+                "Better Than You",
+                "Power And Sacrifice",
+                "You Know Nothing","Song For Dead Time",
+                "Will We Survive",
+                "Love Will Save You",
+                "Failure",
+                "Song For The Sun",
+                "Miracle Of Love",
+                "When She Breathes",
+                "Why Are We Alive?",
+                "The Most Unfortunate Lie"
+            ],
+            "img": "https://img.discogs.com/jkXJHXThNoqsLH_ZVWTfKDMC3A8=/fit-in/600x609/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-658314-1396647274-3340.jpeg.jpg",
+            "website": "https://younggodrecords.com/"
+        },
+        {
+            "id": 1,
+            "artist": "Godflesh",
+            "album": "Godflesh",
+            "year": "1988",
+            "tracks": [
+                "Avalanche Master Song",
+                "Veins",
+                "Godhead",
+                "Spinebender",
+                "Weak Flesh",
+                "Ice Nerveshatter"
+            ],
+            "img": "https://img.discogs.com/t1T0pPkiUiYJoV46WsNwsdunSac=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-81247-1494450801-5353.jpeg.jpg",
+            "website": "http://www.godflesh.com/"
+        },
+        {
+            "id": 2,
+            "artist": "The Ex",
+            "album": "Starters Alternators",
+            "year": "1998",
+            "tracks": [
+                "Frenzy",
+                "Let's Panic Later",
+                "I.O.U. (Nought)",
+                "Art Of Losing",
+                "It's A Sin",
+                "Two Struck By The Moon",
+                "Mother",
+                "Bee Coz",
+                "Lump Sum Insomnia",
+                "Wildebeest",
+                "Nem Úgy Van Most"
+            ],
+            "img": "https://img.discogs.com/4kWgLjWIRAOSfG09oeMPGJLoRps=/fit-in/500x489/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6603895-1422909210-2391.jpeg.jpg",
+            "website": "https://www.theex.nl/index.html"
+        },
+        {
+            "id": 3,
+            "artist": "Lungfish",
+            "album": "Love Is Love",
+            "year": "2003",
+            "tracks": [
+                "Love Is Love",
+                "This World",
+                "Fearfully And Wonderfully",
+                "Hear The Children Sing",
+                "Lay Yourself Aside",
+                "Nation Saving Song",
+                "Unfold The Leg",
+                "No False Suns",
+                "Peace Mountains Of Peace",
+                "Child Of Chaos"
+            ],
+            "img": "https://img.discogs.com/qreNJh3MUvjaupcLi4kcSGwEabA=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1065708-1512816673-9002.jpeg.jpg",
+            "website": "https://www.dischord.com/band/lungfish"
+        }
+    ]
+}
