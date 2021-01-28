@@ -77,6 +77,25 @@
             ],
             "img": "https://img.discogs.com/qreNJh3MUvjaupcLi4kcSGwEabA=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1065708-1512816673-9002.jpeg.jpg",
             "website": "https://www.dischord.com/band/lungfish"
+        },
+        {
+            "id": 4,
+            "artist": "Serge Gainsbourg",
+            "album": "Du Chant À La Une !…",
+            "year": "1958",
+            "tracks": [
+                "Le Poinçonneur Des Lilas",
+                "La Recette De L'Amour Fou",
+                "Douze Belles Dans La Peau",
+                "Ce Mortel Ennui",
+                "Ronsard 58",
+                "La Femme Des Uns Sous Le Corps Des Autres",
+                "L'Alcool",
+                "Du Jazz Dans Le Ravin",
+                "Charleston Des Déménageurs De Piano"
+            ],
+            "img": "https://img.discogs.com/58X70tsRJ0EzVQv2nJv5u8y9IT4=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2565921-1291202096.jpeg.jpg",
+            "website": "https://en.wikipedia.org/wiki/Serge_Gainsbourg"
         }
     ]
 }
