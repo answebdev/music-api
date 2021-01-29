@@ -81,7 +81,7 @@
         {
             "id": 4,
             "artist": "Serge Gainsbourg",
-            "album": "Du Chant À La Une !…",
+            "album": "Du Chant À La Une !...",
             "year": "1958",
             "tracks": [
                 "Le Poinçonneur Des Lilas",
@@ -96,6 +96,28 @@
             ],
             "img": "https://img.discogs.com/58X70tsRJ0EzVQv2nJv5u8y9IT4=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2565921-1291202096.jpeg.jpg",
             "website": "https://en.wikipedia.org/wiki/Serge_Gainsbourg"
+        },
+        {
+            "id": 5,
+            "artist": "Einstürzende Neubauten",
+            "album": "Zeichnungen Des Patienten O.T.",
+            "year": "1983",
+            "tracks": [
+                "Vanadium I-Ching",
+                "Hospitalistische Kinder / Engel Der Vernichtung",
+                "Abfackeln!",
+                "Neun Arme",
+                "Herde",
+                "Merle (Die Elektrik)",
+                "Zeichnungen Des Patienten O.T.",
+                "Finger Und Zähne",
+                "Falschgeld",
+                "Styropor",
+                "Armenia",
+                "Die Genaue Zeit"
+            ],
+            "img": "https://img.discogs.com/TjCwm3Uk79gmtr25fUDMpntYtJA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-103368-1422580451-1755.jpeg.jpg",
+            "website": "https://neubauten.org/"
         }
     ]
 }
