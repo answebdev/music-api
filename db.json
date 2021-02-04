@@ -23,19 +23,18 @@
         },
         {
             "id": 1,
-            "artist": "Godflesh",
-            "album": "Godflesh",
-            "year": "1988",
+            "artist": "The Paper Chase",
+            "album": "Cntrl-Alt-Delete-U",
+            "year": "2007",
             "tracks": [
-                "Avalanche Master Song",
-                "Veins",
-                "Godhead",
-                "Spinebender",
-                "Weak Flesh",
-                "Ice Nerveshatter"
+                "Press Any Key To Continue (Part One, Two, And Three)",
+                "This Is The Return Of The Don't Talk Backs",
+                "And As Long As I Have Fishes To Feed You",
+                "Who Can Deny How Delicious It Tastes?",
+                "...The Unopened Email To God"
             ],
-            "img": "https://img.discogs.com/t1T0pPkiUiYJoV46WsNwsdunSac=/fit-in/600x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-81247-1494450801-5353.jpeg.jpg",
-            "website": "http://www.godflesh.com/"
+            "img": "https://img.discogs.com/tJGPeRKqWTx6JndCe3Gex59G24U=/fit-in/550x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2608596-1292965107.jpeg.jpg",
+            "website": "https://thepaperchase.bandcamp.com/"
         },
         {
             "id": 2,
