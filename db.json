@@ -117,6 +117,49 @@
             ],
             "img": "https://img.discogs.com/TjCwm3Uk79gmtr25fUDMpntYtJA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-103368-1422580451-1755.jpeg.jpg",
             "website": "https://neubauten.org/"
+        },
+        {
+            "id": 6,
+            "artist": "The Mekons",
+            "album": "Honky Tonkin'",
+            "year": "1987",
+            "tracks": [
+                "I Can't Find My Money",
+                "Hole In The Ground",
+                "Sleepless Nights",
+                "Keep On Hoppin'",
+                "Charlie Cake Park",
+                "If They Hang You",
+                "The Prince Of Darkness",
+                "Kidnapped",
+                "Sympathy For The Mekons",
+                "Spit",
+                "Trimdon Grange Explosion",
+                "Please Don't Let Me Love You",
+                "Gin Palace"
+            ],
+            "img": "https://f4.bcbits.com/img/a3336445473_10.jpg",
+            "website": "https://mekons.bandcamp.com/"
+        },
+        {
+            "id": 7,
+            "artist": "Melt-Banana",
+            "album": "Cell-Scape",
+            "year": "2003",
+            "tracks": [
+                "Phantasmagoria",
+                "Shield For Your Eyes, A Beast In The Well On Your Hand",
+                "A Dreamer Who Is Too Weak To Face Up To",
+                "Lost Parts Stinging Me So Cold",
+                "Chain-Shot To Have Some Fun",
+                "Like A White Bat In A Box, Dead Matters Go On",
+                "Key Is A Fact That Cat Brings",
+                "A Hunter In The Rain To Cut The Neck Up In The Present Stage",
+                "If It Is The Deep Sea, I Can See You There",
+                "Outro For Cell-Scape"
+            ],
+            "img": "https://img.discogs.com/HpCv0hShxrXN-jLyluHGKMn6YFY=/fit-in/600x586/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-477440-1190520047.jpeg.jpg",
+            "website": "http://www.maroon.dti.ne.jp/melt-banana/"
         }
     ]
 }
