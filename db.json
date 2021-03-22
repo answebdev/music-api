@@ -160,6 +160,45 @@
             ],
             "img": "https://img.discogs.com/HpCv0hShxrXN-jLyluHGKMn6YFY=/fit-in/600x586/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-477440-1190520047.jpeg.jpg",
             "website": "http://www.maroon.dti.ne.jp/melt-banana/"
+        },
+        {
+            "id": 8,
+            "artist": "The Fall",
+            "album": "The Wonderful And Frightening World Of...",
+            "year": "1984",
+            "tracks": [
+                "Lay Of The Land",
+                "2 x 4",
+                "Copped It",
+                "Elves",
+                "Slang King",
+                "Bug Day",
+                "Stephen Song",
+                "Craigness",
+                "Disney's Dream Debased"
+            ],
+            "img": "https://img.discogs.com/hqUOs9Gf8QfwfKd7saY4AV6hMS8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-372503-1279733153.jpeg.jpg",
+            "website": "http://www.thefall.org/"
+        },
+        {
+            "id": 9,
+            "artist": "Action Beat + G.W Sok",
+            "album": "A Remarkable Machine",
+            "year": "2014",
+            "tracks": [
+                "Spoonfeed Hell",
+                "Judgement Letter",
+                "Heap Of Clay",
+                "Dig The Hole",
+                "Sentence Machine",
+                "Pork Butcher's Knife",
+                "Disappearing Man",
+                "Great Unfinished",
+                "Citizen K",
+                "One Another"
+            ],
+            "img": "https://f4.bcbits.com/img/a1138927800_10.jpg",
+            "website": "https://action-beat.bandcamp.com/album/a-remarkable-machine"
         }
     ]
 }
