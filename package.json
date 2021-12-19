@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "mock": "nodemon --watch mock --exec 'json-server db.js'"
+    "mock": "nodemon --watch mock --exec 'json-server ./mock/db.js'"
   },
   "repository": {
     "type": "git",
