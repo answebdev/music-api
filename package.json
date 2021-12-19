@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "mock": "json-server --watch ./mock/db.js"
+    "mock": "nodemon --watch mock --exec 'json-server ./mock/db.js'"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/answebdev/music-api#readme",
   "dependencies": {
+    "glob": "^7.2.0",
     "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
