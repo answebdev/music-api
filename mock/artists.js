@@ -17,4 +17,10 @@ module.exports = [
     origin: 'Tokyo, Japan',
     years_active: '1992-present',
   },
+  {
+    id: 3,
+    artist: 'New Model Army',
+    origin: 'Bradford, England',
+    years_active: '1980-present',
+  },
 ];
