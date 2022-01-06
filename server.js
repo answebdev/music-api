@@ -44,7 +44,10 @@ server.use(router);
 // });
 
 // app.get('/', limiter, (req, res) => res.send('Hello'));
-app.get('*', limiter, (req, res) => server.use(router));
+app.get('*', limiter, (req, res) => {
+  server.use(middlewares);
+  server.use(router);
+});
 
 console.log('JSON Server is running');
 
