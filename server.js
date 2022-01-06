@@ -34,7 +34,7 @@ const limiter = rateLimit({
 });
 
 // Apply to all requests
-app.use(limiter);
+server.use(limiter);
 
 server.use(middlewares);
 server.use(router);
