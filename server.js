@@ -44,23 +44,13 @@ app.set('trust proxy', 1);
 
 // app.use(limiter);
 
-// Create the rate limit rule
-const apiRequestLimiter = rateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minute
-  max: 2, // limit each IP to 2 requests per windowMs
+const limiter = rateLimit({
+  max: 100,
+  windowMs: 60 * 60 * 1000,
+  message: 'too many requests sent by this ip, please try again in an hour !',
 });
 
-// Use the limit rule as an application middleware
-app.use(apiRequestLimiter);
-
-app.get('http://personal-music-api.herokuapp.com/', function (req, res) {
-  return res.send('Hello World');
-});
-
-app.listen(port, () => {
-  console.log(`server started on port ${port}`);
-});
-
+app.use('https://personal-music-api.herokuapp.com/artists', limiter); // eg: app.use('/api', limiter);
 // server.listen(port, () => console.log(`Server running on port ${port}`));
 
-// app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
