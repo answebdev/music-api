@@ -30,16 +30,14 @@ const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
   windowMs: 1000, // 15 minutes
   max: 1,
-  // message: 'You have sent too many requests',
+  message: 'STOP SENDING so many requests',
 });
 
 // Apply to all requests
-// server.use(limiter);
+server.use(limiter);
 
 server.use(middlewares);
 server.use(router);
-
-server.use(limiter);
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, './mock/db.js'));
