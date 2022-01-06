@@ -34,20 +34,19 @@ const limiter = rateLimit({
 });
 
 // Apply to all requests
-// app.use(limiter);
+app.use(limiter);
 
-// server.use(middlewares);
-// server.use(router);
+server.use(middlewares);
+server.use(router);
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, './mock/db.js'));
 // });
 
 // app.get('/', limiter, (req, res) => res.send('Hello'));
-app.get('*', limiter, (req, res) => {
-  server.use(middlewares);
-  server.use(router);
-});
+// app.get('*', limiter, (req, res) =>
+//   res.send(`https://personal-music-api.herokuapp.com/`)
+// );
 
 console.log('JSON Server is running');
 
