@@ -13,12 +13,13 @@
 
 const express = require('express');
 const rateLimit = require('express-rate-limit');
+const res = require('express/lib/response');
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router(require('./mock/db.js')());
 const middlewares = jsonServer.defaults();
 const path = require('path');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 const app = express();
 
@@ -29,6 +30,7 @@ const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
   windowMs: 1000, // 15 minutes
   max: 1,
+  message: 'You have sent too many requests',
 });
 
 // Apply to all requests
@@ -37,9 +39,11 @@ app.use(limiter);
 server.use(middlewares);
 server.use(router);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './mock/db.js'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, './mock/db.js'));
+// });
+
+app.get('/', limiter, (req, res) => res.send('Hello'));
 
 console.log('JSON Server is running');
 
