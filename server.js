@@ -45,7 +45,7 @@ server.use(router);
 
 // app.get('/', limiter, (req, res) => res.send('Hello'));
 app.get('*', limiter, (req, res) =>
-  res.send('https://personal-music-api.herokuapp.com/')
+  res.send(`https://personal-music-api.herokuapp.com/`)
 );
 
 console.log('JSON Server is running');
