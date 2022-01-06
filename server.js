@@ -44,7 +44,15 @@ server.use(router);
 // });
 
 // app.get('/', limiter, (req, res) => res.send('Hello'));
-app.get('*', limiter, (req, res) => res.send('./mock/db.js'));
+// app.get('*', limiter, (req, res) =>
+//   res.send('./mock/db.js')
+// );
+
+app.get('*', function (req, res, next) {
+  req.method = 'GET';
+  req.query = req.body;
+  next();
+});
 
 console.log('JSON Server is running');
 
