@@ -47,7 +47,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // GET route to handle the request coming from user
-app.get('/https://personal-music-api.herokuapp.com/', (req, res) => {
+app.get('/https://personal-music-api.herokuapp.com/artists', (req, res) => {
   res.status(200).json({
     status: 'success',
     message: 'Hello from the express server',
