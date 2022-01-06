@@ -45,7 +45,7 @@ app.set('trust proxy', 1);
 // app.use(limiter);
 
 const limiter = rateLimit({
-  max: 100,
+  max: 3,
   windowMs: 60 * 60 * 1000,
   message: 'too many requests sent by this ip, please try again in an hour !',
 });
