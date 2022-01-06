@@ -17,12 +17,16 @@ const middlewares = jsonServer.defaults();
 const express = require('express');
 const bodyParser = require('body-parser');
 const rateLimit = require('express-rate-limit');
-cors = require('cors');
+const cors = require('cors');
+const compression = require('compression');
 const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+
+// compress all responses
+app.use(compression());
 
 server.use(middlewares);
 server.use(router);
