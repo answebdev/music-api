@@ -48,7 +48,7 @@ server.use(router);
 //   res.send(`https://personal-music-api.herokuapp.com/`)
 // );
 app.get('*', function (req, res) {
-  res.send('GET request to the homepage');
+  console.log('GET request to the homepage');
 });
 
 console.log('JSON Server is running');
