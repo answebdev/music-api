@@ -7,7 +7,7 @@ const { RateLimiter } = require('limiter');
 const port = process.env.PORT || 3000;
 
 server.use(middlewares);
-server.use(router);
+//server.use(router);
 
 // Allow 150 requests per hour (the Twitter search limit). Also understands
 // 'second', 'minute', 'day', or a number of milliseconds
@@ -19,7 +19,7 @@ async function sendRequest() {
   // remainingRequests tells us how many additional requests could be sent
   // right this moment
   const remainingRequests = await limiter.removeTokens(1);
-  callMyRequestSendingFunction();
+  callMyRequestSendingFunction(server.use(router));
 }
 
 console.log('JSON Server is running');
