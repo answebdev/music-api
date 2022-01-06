@@ -44,9 +44,12 @@ server.use(router);
 // });
 
 // app.get('/', limiter, (req, res) => res.send('Hello'));
-app.get('*', limiter, (req, res) =>
-  res.send(`https://personal-music-api.herokuapp.com/`)
-);
+// app.get('*', limiter, (req, res) =>
+//   res.send(`https://personal-music-api.herokuapp.com/`)
+// );
+app.get('*', function (req, res) {
+  res.send('GET request to the homepage');
+});
 
 console.log('JSON Server is running');
 
