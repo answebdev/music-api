@@ -44,9 +44,7 @@ server.use(router);
 // });
 
 // app.get('/', limiter, (req, res) => res.send('Hello'));
-app.get('https://personal-music-api.herokuapp.com/', limiter, (req, res) =>
-  res.send('./mock/db.js')
-);
+app.get('*', limiter, (req, res) => res.send('./mock/db.js'));
 
 console.log('JSON Server is running');
 
