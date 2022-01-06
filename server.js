@@ -15,11 +15,13 @@ const server = jsonServer.create();
 const router = jsonServer.router(require('./mock/db.js')());
 const middlewares = jsonServer.defaults();
 const express = require('express');
+const bodyParser = require('body-parser');
 const rateLimit = require('express-rate-limit');
 cors = require('cors');
 const port = process.env.PORT || 3000;
 
 const app = express();
+app.use(bodyParser.json());
 app.use(cors());
 
 server.use(middlewares);
