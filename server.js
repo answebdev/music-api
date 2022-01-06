@@ -19,11 +19,11 @@ const server = jsonServer.create();
 const router = jsonServer.router(require('./mock/db.js')());
 const middlewares = jsonServer.defaults();
 const path = require('path');
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.set('trust proxy', 1);
+// app.set('trust proxy', 1);
 
 // Put before your path
 const limiter = rateLimit({
@@ -34,17 +34,17 @@ const limiter = rateLimit({
 });
 
 // Apply to all requests
-app.use(limiter);
+// app.use(limiter);
 
 server.use(middlewares);
 server.use(router);
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, './mock/db.js'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './mock/db.js'));
+});
 
-app.get('/', limiter, (req, res) => res.send('Hello'));
+// app.get('/', limiter, (req, res) => res.send('Hello'));
 
 console.log('JSON Server is running');
 
-server.listen(port);
+app.listen(port);
