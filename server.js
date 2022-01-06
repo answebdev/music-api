@@ -33,21 +33,11 @@ server.use(router);
 
 app.use(router);
 
-// const limiter = rateLimit({
-//   windowMs: 15 * 60 * 1000, // 15 minutes
-//   max: 3,
-// });
-
-// app.use(limiter);
-
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 3, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+  max: 3,
 });
 
-// Apply the rate limiting middleware to all requests
 app.use(limiter);
 
 // server.listen(port, () => console.log(`Server running on port ${port}`));
