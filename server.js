@@ -34,10 +34,12 @@ const limiter = rateLimit({
 });
 
 // Apply to all requests
-server.use(limiter);
+// server.use(limiter);
 
 server.use(middlewares);
 server.use(router);
+
+server.use(limiter);
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, './mock/db.js'));
