@@ -30,7 +30,7 @@ const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
   windowMs: 1000, // 15 minutes
   max: 1,
-  message: 'You have sent too many requests',
+  // message: 'You have sent too many requests',
 });
 
 // Apply to all requests
@@ -43,10 +43,10 @@ server.use(router);
 //   res.sendFile(path.join(__dirname, './mock/db.js'));
 // });
 
-app.get('/', limiter, (req, res) => res.send('Hello'));
-// app.get('*', limiter, (req, res) =>
-//   res.send(`https://personal-music-api.herokuapp.com/`)
-// );
+// app.get('/', limiter, (req, res) => res.send('Hello'));
+app.get('*', limiter, (req, res) =>
+  res.send(`https://personal-music-api.herokuapp.com/`)
+);
 
 console.log('JSON Server is running');
 
