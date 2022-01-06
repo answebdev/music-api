@@ -17,6 +17,8 @@ const middlewares = jsonServer.defaults();
 const express = require('express');
 const rateLimit = require('express-rate-limit');
 const app = express();
+
+const port = process.env.PORT || 3000;
 // app = express();
 
 server.use(middlewares);
@@ -31,6 +33,6 @@ const limiter = rateLimit({
 
 app.use(limiter);
 
-const port = process.env.PORT || 3000;
+server.listen(port, () => console.log(`Server running on port ${port}`));
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+// app.listen(port, () => console.log(`Server running on port ${port}`));
