@@ -28,8 +28,10 @@ app.use(cors());
 // compress all responses
 app.use(compression());
 
-server.use(middlewares);
-server.use(router);
+// server.use(middlewares);
+// server.use(router);
+app.use(middlewares);
+app.use(router);
 
 app.use(router);
 
@@ -40,6 +42,6 @@ const limiter = rateLimit({
 
 app.use(limiter);
 
-server.listen(port, () => console.log(`Server running on port ${port}`));
+// server.listen(port, () => console.log(`Server running on port ${port}`));
 
-// app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
