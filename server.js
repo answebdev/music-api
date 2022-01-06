@@ -11,11 +11,16 @@
 
 // server.listen(port);
 const jsonServer = require('json-server');
+const server = jsonServer.create();
 const router = jsonServer.router(require('./mock/db.js')());
+const middlewares = jsonServer.defaults();
 const express = require('express');
-const rateLimit = require('express-rate-limit'),
-  // const app = express();
-  app = express();
+const rateLimit = require('express-rate-limit');
+const app = express();
+// app = express();
+
+server.use(middlewares);
+server.use(router);
 
 app.use(router);
 
