@@ -6,8 +6,8 @@ const { RateLimiter } = require('limiter');
 
 const port = process.env.PORT || 3000;
 
-// server.use(middlewares);
-// server.use(router);
+server.use(middlewares);
+server.use(router);
 
 // Allow 150 requests per hour (the Twitter search limit). Also understands
 // 'second', 'minute', 'day', or a number of milliseconds
