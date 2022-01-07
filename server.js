@@ -29,7 +29,7 @@ app.set('trust proxy', 1);
 const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
   windowMs: 1000, // 15 minutes
-  max: 3,
+  max: 1,
   message: 'STOP SENDING so many requests',
 });
 
