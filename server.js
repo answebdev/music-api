@@ -34,12 +34,13 @@ const limiter = rateLimit({
   // Breaking Bad API:
   //   windowMs: 15 * 60 * 1000, // 15 minutes
   //   max: 10000
+
   windowMs: 10 * 60 * 1000, // 10 minutes - when the user reaches the limit, the user will be kicked off for 10 minutes
-  max: 8,
+  max: 4,
   message: 'You sent too many requests 💀 Try again later...',
 });
 
-// Apply to all requests
+// Apply limiter to all requests
 server.use(limiter);
 
 // For Heroku: https://stackoverflow.com/questions/62494060/express-rate-limit-not-working-when-deployed-to-heroku
