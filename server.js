@@ -36,7 +36,7 @@ const limiter = rateLimit({
   // windowMs: 1000, // 15 minutes
   windowMs: 10 * 60 * 1000, // 10 minutes
   max: 5,
-  message: 'Do NOT SEND so many messages again...it is too many',
+  // message: 'Do NOT SEND so many messages again...it is too many',
 });
 
 // Apply to all requests
