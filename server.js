@@ -1,3 +1,4 @@
+// ORIGINAL WORKING CODE
 // const jsonServer = require('json-server');
 // const server = jsonServer.create();
 // const router = jsonServer.router(require('./mock/db.js')());
@@ -10,6 +11,8 @@
 // console.log('JSON Server is running');
 
 // server.listen(port);
+
+// =================================================================
 
 const express = require('express');
 const rateLimit = require('express-rate-limit');
@@ -24,6 +27,8 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.set('trust proxy', 1);
+
+app.use(express.static(__dirname));
 
 // Put before your path
 const limiter = rateLimit({
