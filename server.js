@@ -37,10 +37,10 @@ const limiter = rateLimit({
 });
 
 // Apply to all requests
-server.use(limiter);
+app.use(limiter);
 
-server.use(middlewares);
-server.use(router);
+app.use(middlewares);
+app.use(router);
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, './mock/db.js'));
@@ -54,4 +54,4 @@ server.use(router);
 console.log('JSON Server is running');
 
 // app.listen(port);
-server.listen(port);
+app.listen(port);
