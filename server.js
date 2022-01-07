@@ -21,7 +21,7 @@
 
 const express = require('express');
 const rateLimit = require('express-rate-limit');
-const res = require('express/lib/response');
+// const res = require('express/lib/response');
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router(require('./mock/db.js')());
