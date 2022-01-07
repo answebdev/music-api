@@ -36,7 +36,7 @@ const limiter = rateLimit({
   //   windowMs: 15 * 60 * 1000, // 15 minutes
   //   max: 10000
   windowMs: 10 * 60 * 1000, // 10 minutes - when the user reaches the limit, the user will be kicked off for 10 minutes
-  max: 5,
+  max: 11,
   message: 'You sent too many requests 💀 Try again later...',
 });
 
