@@ -15,6 +15,9 @@
 // =================================================================
 // Heroku: you can’t make more than 4500 Platform API requests per hour
 // See: https://devcenter.heroku.com/articles/limits
+// Video: https://www.youtube.com/watch?v=mZ0O7gcS7Yk
+// Video: https://www.youtube.com/watch?v=iicNZf3eGCI
+// Traversy Video: https://www.youtube.com/watch?v=ZGymN8aFsv4
 
 const express = require('express');
 const rateLimit = require('express-rate-limit');
@@ -27,10 +30,6 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-// For Heroku: https://stackoverflow.com/questions/62494060/express-rate-limit-not-working-when-deployed-to-heroku
-app.set('trust proxy', 1);
-// server.set('trust proxy', 1);
-
 // Put before your path
 const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
@@ -41,6 +40,10 @@ const limiter = rateLimit({
 
 // Apply to all requests
 server.use(limiter);
+
+// For Heroku: https://stackoverflow.com/questions/62494060/express-rate-limit-not-working-when-deployed-to-heroku
+app.set('trust proxy', 1);
+// server.set('trust proxy', 1);
 
 server.use(middlewares);
 server.use(router);
