@@ -33,8 +33,9 @@ const app = express();
 // Put before your path
 const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
-  windowMs: 1000, // 15 minutes
-  max: 1,
+  // windowMs: 1000, // 15 minutes
+  windowMs: 10 * 60 * 1000, // 10 minutes
+  max: 5,
   message: 'Do NOT SEND so many messages again...it is too many',
 });
 
