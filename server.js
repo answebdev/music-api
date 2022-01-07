@@ -28,7 +28,7 @@ const app = express();
 
 app.set('trust proxy', 1);
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + './mock/db.js'));
 
 // Put before your path
 const limiter = rateLimit({
