@@ -32,11 +32,12 @@ const app = express();
 
 // Put before your path
 const limiter = rateLimit({
-  // windowMs: 15 * 60 * 1000, // 15 minutes
-  // windowMs: 1000, // 15 minutes
-  windowMs: 10 * 60 * 1000, // 10 minutes
+  // Breaking Bad API:
+  //   windowMs: 15 * 60 * 1000, // 15 minutes
+  //   max: 10000
+  windowMs: 10 * 60 * 1000, // 10 minutes - when the user reaches the limit, the user will be kicked off for 10 minutes
   max: 5,
-  // message: 'Do NOT SEND so many messages again...it is too many',
+  message: 'You sent too many requests 💀 Try again later...',
 });
 
 // Apply to all requests
