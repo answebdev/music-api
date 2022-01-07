@@ -33,14 +33,14 @@ const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
   windowMs: 1000, // 15 minutes
   max: 1,
-  message: 'STOP SENDING so many requests',
+  message: 'Do NOT SEND so many messages again...it is too many',
 });
 
 // Apply to all requests
-app.use(limiter);
+server.use(limiter);
 
-app.use(middlewares);
-app.use(router);
+server.use(middlewares);
+server.use(router);
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, './mock/db.js'));
@@ -54,4 +54,4 @@ app.use(router);
 console.log('JSON Server is running');
 
 // app.listen(port);
-app.listen(port);
+server.listen(port);
