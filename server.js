@@ -23,7 +23,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-// app.set('trust proxy', 1);
+app.set('trust proxy', 1);
 
 // Put before your path
 const limiter = rateLimit({
