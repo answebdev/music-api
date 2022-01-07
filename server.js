@@ -28,8 +28,6 @@ const app = express();
 
 app.set('trust proxy', 1);
 
-app.use(express.static(__dirname + './mock/db.js'));
-
 // Put before your path
 const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
