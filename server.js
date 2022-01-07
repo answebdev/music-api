@@ -26,7 +26,8 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 // For Heroku: https://stackoverflow.com/questions/62494060/express-rate-limit-not-working-when-deployed-to-heroku
-server.set('trust proxy', 1);
+app.set('trust proxy', 1);
+// server.set('trust proxy', 1);
 
 // Put before your path
 const limiter = rateLimit({
