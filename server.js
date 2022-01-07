@@ -16,19 +16,14 @@
 
 const express = require('express');
 const rateLimit = require('express-rate-limit');
-const cors = require('cors');
 const res = require('express/lib/response');
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router(require('./mock/db.js')());
 const middlewares = jsonServer.defaults();
-const path = require('path');
 const port = process.env.PORT || 3000;
 
 const app = express();
-app.use(cors());
-
-app.set('trust proxy', 1);
 
 // Put before your path
 const limiter = rateLimit({
@@ -40,6 +35,8 @@ const limiter = rateLimit({
 
 // Apply to all requests
 server.use(limiter);
+
+app.set('trust proxy', 1);
 
 server.use(middlewares);
 server.use(router);
