@@ -25,6 +25,8 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+// app.set('trust proxy', 1);
+
 // Put before your path
 const limiter = rateLimit({
   // windowMs: 15 * 60 * 1000, // 15 minutes
@@ -35,8 +37,6 @@ const limiter = rateLimit({
 
 // Apply to all requests
 server.use(limiter);
-
-app.set('trust proxy', 1);
 
 server.use(middlewares);
 server.use(router);
