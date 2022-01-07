@@ -50,4 +50,5 @@ server.use(router);
 
 console.log('JSON Server is running');
 
-server.listen(port);
+app.listen(port);
+//server.listen(port);
