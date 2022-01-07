@@ -16,6 +16,7 @@
 
 const express = require('express');
 const rateLimit = require('express-rate-limit');
+const cors = require('cors');
 const res = require('express/lib/response');
 const jsonServer = require('json-server');
 const server = jsonServer.create();
@@ -25,6 +26,7 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 const app = express();
+app.use(cors());
 
 app.set('trust proxy', 1);
 
