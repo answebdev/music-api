@@ -51,8 +51,10 @@ async function sendRequest() {
   // remainingRequests tells us how many additional requests could be sent
   // right this moment
   const remainingRequests = await limiter.removeTokens(1);
-  server.use(middlewares);
-  server.use(router);
+  console.log('JSON Server is running');
+
+  // app.listen(port);
+  server.listen(port);
 }
 
 // Apply to all requests
@@ -60,8 +62,3 @@ async function sendRequest() {
 
 // server.use(middlewares);
 // server.use(router);
-
-console.log('JSON Server is running');
-
-// app.listen(port);
-server.listen(port);
